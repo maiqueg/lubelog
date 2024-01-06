@@ -265,7 +265,7 @@ namespace CarCareTracker.Controllers
                     if (currentObject.IsFillToFull)
                     {
                         //if user filled to full.
-                        gasRecordViewModel.MilesPerGallon = useMPG ? ((unFactoredMileage + deltaMileage) / (unFactoredConsumption + currentObject.Gallons)) : 100 / ((unFactoredMileage + deltaMileage) / (unFactoredConsumption + currentObject.Gallons));
+                        gasRecordViewModel.MilesPerGallon = useMPG ? ((unFactoredMileage + deltaMileage) / (unFactoredConsumption + currentObject.Gallons)) : ((unFactoredMileage + deltaMileage) / (unFactoredConsumption + currentObject.Gallons));
                         //reset unFactored vars
                         unFactoredConsumption = 0;
                         unFactoredMileage = 0;
