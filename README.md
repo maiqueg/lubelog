@@ -12,3 +12,13 @@ Because nobody should have to deal with a homemade spreadsheet or a shoebox full
 - SweetAlert2
 - CsvHelper
 - Chart.js
+
+## Running with Docker
+- Clone this repository and inside the project folder execute:
+```
+docker build -t lubelogger .
+```
+- Run the Docker image that was created:
+```
+docker run -p5000:5000 -d --name lubelogger lubelogger
+```
